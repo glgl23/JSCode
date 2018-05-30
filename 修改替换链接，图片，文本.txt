@@ -1,0 +1,37 @@
+<title>ÐÞ¸ÄÌæ»»Á´½Ó£¬Í¼Æ¬£¬ÎÄ±¾</title>
+<script>
+		/* function release(){
+			var oLink = document.getElementById('link');
+			oLink.href = 'https://www.taobao.com';
+			} Ìæ»»Á´½Ó*/
+		/* function release(){
+			var oImg = document.getElementById('img');
+			oImg.src = '2.jpg';
+			} Ìæ»»Í¼Æ¬*/
+		/* function release(){
+			var oTxt = document.getElementById('txt');
+			oTxt.value = 'Hello!';
+			} Ìæ»»ÎÄ×Ö*/
+		function change(){
+			var oTxt1 = document.getElementById('txt1');
+			var oTxt2 = document.getElementById('txt2');
+			var a = oTxt1.value;
+			var b = oTxt2.value;
+			oTxt1.value = b;
+			oTxt2.value = a;
+			} //½»»»ÎÄ±¾
+</script>
+</head>
+
+<body>
+	<!-- <input type="button" value="Ìæ»»" onClick="release();"/>
+    <a href="https://www.baidu.com" id="link">Á´½Ó</a> Ìæ»»Á´½Ó-->
+    <!-- <input type="button" value="Ìæ»»" onClick="release();"/>
+    <img src="1.jpg" id="img"/> Ìæ»»Í¼Æ¬-->
+    <!-- <input type="button" value="Ìæ»»" onClick="release();"/>
+    <input type="text" id="txt" value="abc"/> Ìæ»»ÎÄ×Ö-->
+    <input type="button" value="½»»»" onClick="change();"/>
+    <input type="text" id="txt1"/>
+    <input type="text" id="txt2"/>
+</body>
+</html>

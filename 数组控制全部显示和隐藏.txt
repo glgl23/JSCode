@@ -1,0 +1,38 @@
+<title>数组控制全部显示和隐藏</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background-color:yellow;
+		margin:10px;
+		display:inline-block;
+		}
+</style>
+<script>
+	window.onload = function(){
+		var allBtn = document.getElementsByTagName("input");
+		var allDiv = document.getElementsByTagName("div");
+		allBtn[0].onclick = function(){
+			for (var i=0; i<allDiv.length; i++){
+				allDiv[i].style.display = 'inline-block';
+				}
+			}
+		allBtn[1].onclick = function(){
+			for (var i=0; i<allDiv.length; i++){
+				allDiv[i].style.display = 'none';
+				}
+			}
+	}
+</script>
+</head>
+
+<body>
+	<input type="button" value="显示"/>
+    <input type="button" value="隐藏"/><br/>
+    <div></div>
+    <div></div>    
+    <div></div>
+    <div></div>
+    <div></div>            
+</body>
+</html>

@@ -1,0 +1,26 @@
+<title>行间事件分离</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background:pink;	
+	}
+</style>
+<script>
+	//window:窗口对象
+	//onload:当整个文档加载完毕后，才会触发onload事件，如果有多个window. Onload后面会覆盖前面
+	window.onload = function(){
+		var oBtn = document.getElementById("btn");
+		oBtn.onclick = function(){
+			var oBox = document.getElementById("box");
+			oBox.style.width = '400px';
+			}
+		}
+</script>
+</head>
+
+<body>
+	<input id="btn" type="button" value="变大"/>
+	<div id="box"></div>
+</body>
+</html>

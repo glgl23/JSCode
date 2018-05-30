@@ -1,0 +1,28 @@
+<title>图片前后切换</title>
+<script>
+	var index = 1;
+	function next(){
+		index++;
+		if (index == 5 ){
+		index = 1;
+		}
+		var oImg = document.getElementById("img");
+		oImg.src = "img/" + index + ".jpg";
+		}
+	function prev(){
+		index--;
+		if (index == 0 ){
+		index = 4;
+		}
+		var oImg = document.getElementById("img");
+		oImg.src = "img/" + index + ".jpg";
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" value="前一张" onClick="prev();"/>
+	<input type="button" value="下一张" onClick="next();"/>
+    <img id="img" src="img/1.jpg"/>
+</body>
+</html>

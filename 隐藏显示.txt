@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ÏÔÊ¾&Òþ²Ø</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background-color:green;
+		display:none;
+	}
+</style>
+<script>
+	function toggle(){
+		var oBox = document.getElementById("box");
+		if (oBox.style.display == 'block'){
+			oBox.style.display = 'none';
+			}else{
+				oBox.style.display = 'block';
+				}
+		}
+</script>
+</head>
+<body>
+	<input type="button" value="ÏÔÊ¾/Òþ²Ø" onClick="toggle();"/>
+    <div id="box"></div>
+</body>
+</html>

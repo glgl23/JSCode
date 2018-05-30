@@ -1,0 +1,60 @@
+<title>通过class获取元素</title>
+<style>
+	div{
+		width:900px;
+		height:300px;
+		border:1px solid black;
+		margin:10px;	
+		}
+	p{
+		width:830px;
+		height:50px;
+		padding:10px;
+		margin:20px;
+		border:1px solid black;
+		font-size:24px;
+		text-align:center;
+		line-height:50px;
+		}
+</style>
+<script>
+	window.onload = function(){
+		var oBtn = document.getElementsByTagName("input");
+		var oBox1 = document.getElementById("box1");
+		var oBox2 = document.getElementById("box2");
+		var allP1 = oBox1.getElementsByTagName("p");
+		var allP2 = oBox2.getElementsByTagName("p");
+		oBtn[0].onmouseover = function(){
+			for (var i = 0; i < allP1.length; i++){
+				allP1[i].style.backgroundColor = "green";
+				}
+			}
+		oBtn[0].onmouseout = function(){
+			for (var i = 0; i < allP1.length; i++){
+				allP1[i].style.backgroundColor = "";
+				}
+			}
+		oBtn[1].onclick = function(){
+			for (var i = 0; i < allP2.length; i++){
+				allP2[i].style.backgroundColor = "pink";
+				}
+			}
+		}
+</script>
+</head>
+
+<body>
+<input type="button" value="改变上部颜色"/>
+<input type="button" value="改下上部颜色"/><br/>
+<div id="box1">
+	<p>This is a tag</p>
+    <p>This is a tag</p>
+    <p>This is a tag</p>
+</div>
+<div id="box2">
+	<p>This is a tag</p>
+    <p>This is a tag</p>
+    <p>This is a tag</p>
+</div>
+</body>
+</html>

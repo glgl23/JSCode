@@ -1,0 +1,25 @@
+<title>改变样式,代码精简</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+</style>
+<script>
+	function setStyle ( attr, value ){
+		var oBox = document.getElementById('divChange');
+		oBox.style[attr] = value;
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" value="变宽" onClick="setStyle( 'width', '400px');"/>
+    <input type="button" value="变高" onClick="setStyle( 'height', '400px');"/>
+    <input type="button" value="变背景" onClick="setStyle( 'backgroundColor', 'yellow');"/>
+    <!-- <input type="button" value="Big" onClick="toBig()"/>
+    <input type="button" value="Small" onClick="toSmall()"/> -->
+    <div id="divChange"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<title>改变样式</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+</style>
+<script>
+	function show(){
+		var oBox = document.getElementById('divChange');
+		oBox.style.display = 'block';
+	}
+	function hide(){
+		var oBox = document.getElementById('divChange');
+		oBox.style.display = 'none';
+	}
+	function toBig(){
+		var oBox = document.getElementById('divChange');
+		oBox.style.width = '400px';
+		oBox.style.height = '400px';
+		oBox.style.backgroundColor = 'yellow';
+		}
+	function toSmall(){
+		var oBox = document.getElementById('divChange');
+		oBox.style.width = '200px';
+		oBox.style.height = '200px';
+		oBox.style.backgroundColor = 'green';
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" value="Big" onMouseOver="toBig()">
+    <input type="button" value="Small" onMouseOver="toSmall()">
+    <!-- <input type="button" value="Big" onClick="toBig()">
+    <input type="button" value="Small" onClick="toSmall()"> -->
+    <div id="divChange"></div>
+</body>
+</html>

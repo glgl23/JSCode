@@ -1,0 +1,19 @@
+<title>Í¼Æ¬ÇÐ»»</title>
+<script>
+	var index = 1;
+	function toggle(){
+		index++;
+		if (index == 5 ){
+		index = 1;
+		}
+		var oImg = document.getElementById("img");
+		oImg.src = "img/" + index + ".jpg";
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" value="ÏÂÒ»ÕÅ" onClick="toggle();"/>
+    <img id="img" src="img/1.jpg"/>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<title>控制字体大小</title>
+<style>
+	p{
+		width:600px;
+		border:1px solid black;
+		padding:5px;
+	}
+</style>
+<script>
+		var num = 14;
+		function fontBig(){
+			var oContent = document.getElementById('textP');
+			num += 4;
+			oContent.style.fontSize = num + "px";
+			}
+		function fontSmall(){
+			var oContent = document.getElementById('textP');
+			num -= 4;
+			oContent.style.fontSize = num + "px";
+			}
+</script>
+</head>
+
+<body>
+	<input type="button" value="字体变大" onClick="fontBig();"/>
+    <input type="button" value="字体变小" onClick="fontSmall();"/>
+    <p id="textP">
+    	这是一段测试文字，用于验证字体变大变小的效果实现。
+    </p>
+</body>
+</html>

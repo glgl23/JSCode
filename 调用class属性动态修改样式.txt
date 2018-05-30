@@ -1,0 +1,30 @@
+<title>调用class属性动态修改样式</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+	.active{
+		width:400px;
+		height:400px;
+		background-color:yellow;
+		}
+</style>
+<script>
+	function setStyle (){
+		var oBox = document.getElementById('divChange');
+		oBox.className = 'active';
+		}
+	function resetStyle (){
+		var oBox = document.getElementById('divChange');
+		oBox.className = '';
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" value="修改样式" onClick="setStyle();"/>
+    <input type="button" value="恢复样式" onClick="resetStyle();"/>
+    <div id="divChange"></div>
+</body>

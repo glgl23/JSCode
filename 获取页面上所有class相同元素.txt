@@ -1,0 +1,49 @@
+<title>获取页面上所有class相同元素</title>
+</head>
+<style>
+	div{
+		width:900px;
+		height:300px;
+		border:1px solid black;
+		margin:10px;	
+		}
+	p{
+		width:830px;
+		height:50px;
+		padding:10px;
+		margin:20px;
+		border:1px solid black;
+		font-size:24px;
+		text-align:center;
+		line-height:50px;
+		}
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+		var allCode = document.getElementsByTagName('*');
+		var aNode = [];
+		var count = 0;
+		for (var i = 0; i < allCode.length; i++) {
+			if (allCode[i].className == 'P1') {
+				aNode[count] = allCode[i];
+				count++;
+			}
+		}
+		for (var i = 0; i < aNode.length; i++) {
+			aNode[i].style.backgroundColor = 'green';
+		}
+	}
+</script>
+<body>
+	<div id="box1">
+		<p>This is a tag</p>
+	    <p class="P1">This is a tag</p>
+	    <p>This is a tag</p>
+	</div>
+	<div id="box2">
+		<p>This is a tag</p>
+	    <p class="P1">This is a tag</p>
+	    <p>This is a tag</p>
+	</div>
+</body>
+</html>

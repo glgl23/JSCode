@@ -1,0 +1,25 @@
+<title>µã»÷°´Å¥ÏÔÊ¾Í¼Æ¬</title>
+<script>
+	window.onload = function(){
+		var oBtn1 = document.getElementById("btn1");
+		var oBtn2 = document.getElementById("btn2");
+		var oBtn3 = document.getElementById("btn3");
+		oBtn1.onclick = function(){
+			document.body.style.background = "url('img/1.jpg') no-repeat center top"
+			}
+		oBtn2.onclick = function(){
+			document.body.style.background = "url('img/2.jpg') no-repeat center top"
+			}
+		oBtn3.onclick = function(){
+			document.body.style.background = "url('img/3.jpg') no-repeat center top"
+			}
+		}
+</script>
+</head>
+
+<body>
+	<input id="btn1" type="button" value="ÏÔÊ¾Í¼Æ¬1"/>
+    <input id="btn2" type="button" value="ÏÔÊ¾Í¼Æ¬2"/>
+    <input id="btn3" type="button" value="ÏÔÊ¾Í¼Æ¬3"/>
+</body>
+</html>

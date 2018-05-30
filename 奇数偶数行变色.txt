@@ -1,0 +1,51 @@
+<title>奇数偶数行变色</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		display:inline-block;
+		border:solid 1px black;
+		margin:10px;
+		}
+</style>
+<script>
+	window.onload = function(){
+		var allBtn = document.getElementsByTagName("input");
+		var allDiv = document.getElementsByTagName("div");
+		var oTxt1 = document.getElementById("txt1");
+		var oTxt2 = document.getElementById("txt2");
+		allBtn[0].onclick = function(){
+			for(var i=0; i<allDiv.length; i++){
+			if( i % 2 ==0){
+				allDiv[i].style.backgroundColor = oTxt1.value;
+					}
+				}
+			}
+		allBtn[1].onclick = function(){
+			for(var i=0; i<allDiv.length; i++){
+			if( i % 2 !=0){
+				allDiv[i].style.backgroundColor = oTxt2.value;
+					}
+				}
+			}
+	}
+</script>
+</head>
+
+<body>
+	<input type="button" value="奇数行变色"/>
+    <input type="button" value="偶数行变色"/>
+    <input type="text" id="txt1"/>
+    <input type="text" id="txt2"/><br/>
+    <div></div>
+    <div></div>    
+    <div></div>
+    <div></div>
+    <div></div> 
+    <div></div>
+    <div></div>    
+    <div></div>
+    <div></div>
+    <div></div>            
+</body>
+</html>
